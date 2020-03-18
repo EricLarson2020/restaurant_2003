@@ -8,7 +8,9 @@ def initialize (opening_time, name)
 end
 
 def closing_time(time)
-  @opening_time.tr(':00', "").to_i + time
+
+time_open =  @opening_time.chop.chop.chop.to_i + time
+time_open.to_s.concat(":00")
 end
 
 def add_dish(dish)
