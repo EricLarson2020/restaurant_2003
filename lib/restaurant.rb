@@ -27,9 +27,11 @@ def open_for_lunch?
 end
 
 def add_dish_names
-
+dishes = []
   @dishes.each do |dish|
-    dish.upcase
+    dishes << dish.upcase
+
   end
+dishes
 end
 end
