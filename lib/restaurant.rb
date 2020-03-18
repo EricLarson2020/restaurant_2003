@@ -16,4 +16,13 @@ end
 def add_dish(dish)
   @dishes << dish
 end
+
+def open_for_lunch?
+  if
+      @opening_time.chop.chop.chop.to_i  < 12
+    true
+  else
+    false
+  end
+end
 end
